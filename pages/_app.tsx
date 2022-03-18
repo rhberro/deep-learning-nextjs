@@ -1,7 +1,6 @@
 import "styles/globals.css";
 
 import type { AppProps, NextWebVitalsMetric } from "next/app";
-import { appWithTranslation } from "next-i18next";
 import LocaleSwitcher from "components/LocaleSwitcher";
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
@@ -20,4 +19,4 @@ function MyApp(props: AppProps): React.ReactElement<AppProps> {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;
